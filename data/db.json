@@ -1,0 +1,48 @@
+{
+  "slotDetails": [
+    {
+      "firstName": "Ishaan",
+      "lastName": "Bajpai",
+      "age": "21",
+      "number": "9855333392",
+      "aadhar": "1234-5678-9101",
+      "comorbities": "none",
+      "slot": "slot3",
+      "gender": "Male",
+      "id": 1
+    },
+    {
+      "firstName": "Disha",
+      "lastName": "Sharma",
+      "age": "2000-10-04",
+      "number": "9999999999",
+      "aadhar": "123456987",
+      "comorbities": "",
+      "slot": "slot3",
+      "gender": "Female",
+      "id": 2
+    },
+    {
+      "firstName": "Sakshi",
+      "lastName": "Sinha",
+      "age": "2001-01-14",
+      "number": "9999999999",
+      "aadhar": "123456897",
+      "comorbities": "",
+      "slot": "slot2",
+      "gender": "Female",
+      "id": 3
+    },
+    {
+      "firstName": "Aanchal",
+      "lastName": "Soni",
+      "age": "2000-07-21",
+      "number": "9999999999",
+      "aadhar": "123456978",
+      "comorbities": "",
+      "slot": "slot1",
+      "gender": "Female",
+      "id": 4
+    }
+  ]
+}

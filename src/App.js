@@ -1,39 +1,33 @@
 import React from 'react';
-
-import { Cards, CountryPicker, Chart } from './components';
-import { fetchData } from './api/';
-import styles from './App.module.css';
-
-import image from './images/image.png';
+import Navbar from './components/Navbar/Navbar';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import Home from './components/Home/Home';
+import Register from './components/Register/Register';
+import News from './components/News/News';
 
 class App extends React.Component {
-  state = {
-    data: {},
-    country: '',
-  }
-
-  async componentDidMount() {
-    const data = await fetchData();
-
-    this.setState({ data });
-  }
-
-  handleCountryChange = async (country) => {
-    const data = await fetchData(country);
-
-    this.setState({ data, country: country });
-  }
-
+ 
   render() {
-    const { data, country } = this.state;
 
     return (
-      <div className={styles.container}>
-        <img className={styles.image} src={image} alt="COVID-19" />
-        <Cards data={data} />
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart data={data} country={country} /> 
-      </div>
+      <Router>
+        <div className="App">
+          <Navbar></Navbar>
+          <div className="content">
+            <Switch>
+              <Route exact path="/">
+                <Home/>
+              </Route>
+              <Route path="/register">
+                 <Register/> 
+              </Route>
+              <Route path="/news">
+                  <News/>
+              </Route>
+            </Switch>
+          </div>
+        </div>
+      </Router>
     );
   }
 }

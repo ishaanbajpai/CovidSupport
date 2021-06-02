@@ -1,10 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 50px 0;
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
 }
-
+.Cards_container__34FoI {
+  margin-bottom: 50px;
+}
+.textStyle{
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
 .infected {
   border-bottom: 10px solid rgba(0, 0, 255, 0.5);
 }
@@ -15,4 +24,8 @@
 
 .deaths{
   border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+h1{
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
